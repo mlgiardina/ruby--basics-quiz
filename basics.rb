@@ -24,7 +24,7 @@ ruby_basics = {
   "18" => hsh[:name] == 'Fido',
   "19" => hsh.keys == [:name, :age],
   "20" => hsh.values == ['Fido', '99'],
-  "21" => hsh = {name: 'Fido', age: '99', special: 'Dog'} == { name: 'Fido', age: '99', special: 'Dog' }
+  "21" => hsh.merge(special: 'Dog') == { name: 'Fido', age: '99', special: 'Dog' }
 }
 
-puts ruby_basics.each{ |key, value| print "Question " + " #{key} = #{value}\n" }
+puts ruby_basics.each{ |key, value| print "Question " + "#{key} = #{value}\n" }
